@@ -1,75 +1,46 @@
-# Malayalam Astrology Suggestion Web App
+# Malayalam Astrology Web Application
 
-A web application that provides astrology-based suggestions in Malayalam language. The application uses PHP for backend processing and stores data in CSV format.
+A web application that provides astrological predictions in Malayalam language. The application includes daily, weekly, monthly, and yearly predictions for all zodiac signs.
 
 ## Features
 
-- User-friendly interface in Malayalam
-- Daily, weekly, and monthly predictions
-- Zodiac sign selection
-- Birth date input
-- Admin panel for managing predictions
-- Responsive design
-- Beautiful animations and transitions
+- Zodiac sign selection with Malayalam names
+- Multiple prediction types:
+  - Daily predictions
+  - Weekly predictions
+  - Monthly predictions
+  - Yearly predictions (2024-2033)
+- Admin panel for managing astrological data
+- Responsive design with Malayalam font support
+- CSV-based data storage
 
-## Requirements
+## Technology Stack
 
-- PHP 7.4 or higher
-- Web server (Apache/Nginx)
-- Modern web browser with Malayalam font support
+- Frontend: HTML, CSS, JavaScript
+- Backend: PHP
+- Database: CSV file
+- Font: Noto Sans Malayalam
 
 ## Installation
 
-1. Clone or download this repository to your web server's directory:
+1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/rajesh8129355259/Free-Horoscope-in-Malayalam.git
 ```
 
-2. Ensure the `data` directory has write permissions for the web server:
+2. Start PHP development server:
 ```bash
-chmod 755 data
-chmod 644 data/astrology.csv
+php -S localhost:8000
 ```
 
-3. Configure your web server to serve the application from the project directory.
+3. Access the application:
+- Main site: http://localhost:8000
+- Admin panel: http://localhost:8000/admin (Password: admin123)
 
-4. Access the application through your web browser:
-```
-http://localhost/path-to-project/
-```
+## Directory Structure
 
-## Admin Access
-
-The admin panel is accessible at:
-```
-http://localhost/path-to-project/admin/
-```
-
-Default admin password: `admin123`
-
-**Important:** Change the default password in `admin/index.php` before deploying to production.
-
-## CSV Data Structure
-
-The application uses a CSV file (`data/astrology.csv`) with the following structure:
-
-```csv
-Zodiac,Date_Range,Daily_Prediction,Weekly_Prediction,Monthly_Prediction,General_Tips
-മേടം,March 21-April 19,daily_text,weekly_text,monthly_text,tips_text
-```
-
-## Security Considerations
-
-1. Change the default admin password
-2. Implement proper authentication in production
-3. Validate and sanitize all user inputs
-4. Use HTTPS in production
-5. Regular backup of the CSV data
-
-## Contributing
-
-Feel free to submit issues and enhancement requests.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
+- `/admin` - Admin panel files
+- `/css` - Stylesheet files
+- `/js` - JavaScript files
+- `/data` - CSV database files
+- `/includes` - PHP include files 
